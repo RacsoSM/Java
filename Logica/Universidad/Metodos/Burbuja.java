@@ -4,17 +4,17 @@ public class Burbuja {
 
 	public static void main(String[] args) {
 		int v=0,suma=0,prom=0;
-		System.out.println("Defina el tamaño del vector: ");
+		System.out.println("Defina el tamaÃ±o del vector: ");
 		v=Leer.datoInt();
 		int vec[]= new int [v];
 		
 		for (int i = 0; i < vec.length; i++) {
 			vec[i]=(int)(Math.random()*(99-10+1)+10);
 		}
-		System.out.println("\n=================VECTOR ORIGINAL=================");
+		System.out.println("\n=================VECTOR ORIGINAL================");
 		imprime.ImprimeInt(vec); //METODO REUTILIZADO DE OTRO PROGRAMA QUE IMPRIME VECTORES INT
 		burbuja(vec);
-		System.out.println("\n=================VECTOR ORDENADO=================");
+		System.out.println("\n=================VECTOR ORDENADO================");
 		imprime.ImprimeInt(vec); //METODO REUTILIZADO DE OTRO PROGRAMA QUE IMPRIME VECTORES INT
 		
 		suma=suma(vec);
