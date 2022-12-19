@@ -13,9 +13,9 @@ public class Burbuja {
 		for (int i = 0; i < vec.length; i++) {
 			vec[i]=(int)(Math.random()*(99-10+1)+10);
 		}
-		System.out.println("\n=================VECTOR ORIGINAL================");
+		System.out.println("\n===============VECTOR ORIGINAL================");
 		imprime.ImprimeInt(vec);
-		System.out.println("\n\n=================VECTOR ORDENADO================");
+		System.out.println("\n\n=============VECTOR ORDENADO================");
 		bubble(vec);
 		imprime.ImprimeInt(vec);
 		/*burbuja(vec);
