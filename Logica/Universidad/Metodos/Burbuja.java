@@ -1,22 +1,29 @@
 package Metodos;
+import Pruebas.Leer;
+import java.util.Scanner;
 //SANTACRUZ MALDONADO OSCAR SAID
 public class Burbuja {
-
+	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		int v=0,suma=0,prom=0;
 		System.out.println("Defina el tamaño del vector: ");
-		v=Leer.datoInt();
+		v=sc.nextInt();
 		int vec[]= new int [v];
 		
 		for (int i = 0; i < vec.length; i++) {
 			vec[i]=(int)(Math.random()*(99-10+1)+10);
 		}
 		System.out.println("\n=================VECTOR ORIGINAL================");
-		imprime.ImprimeInt(vec); //METODO REUTILIZADO DE OTRO PROGRAMA QUE IMPRIME VECTORES INT
-		burbuja(vec);
-		System.out.println("\n=================VECTOR ORDENADO================");
-		imprime.ImprimeInt(vec); //METODO REUTILIZADO DE OTRO PROGRAMA QUE IMPRIME VECTORES INT
+		imprime.ImprimeInt(vec);
+		System.out.println("\n\n=================VECTOR ORDENADO================");
+		bubble(vec);
+		imprime.ImprimeInt(vec);
+		/*burbuja(vec);
 		
+		imprime.ImprimeInt(vec);*/
+
+
+
 		suma=suma(vec);
 		System.out.println("\nLa suma del vector es de: "+suma);
 		
@@ -46,6 +53,26 @@ public class Burbuja {
 			}	
 	}
 	
+	public static void bubble (int [] vec){ //METODO QUE ORDENA
+		int aux[]= new int [vec.length];
+	
+
+		for(int i=0;i<vec.length;i++){
+			
+			for(int y=0;y<vec.length-1;y++){
+				if(vec[y]>vec[y+1]){
+					aux[y]=vec[y];
+					vec[y]=vec[y+1];
+					vec[y+1]=aux[y];
+				}
+			}
+		}
+	
+	
+		
+				
+	}
+	
 	
 	public static int suma (int [] vec){ //METODO QUE SUMA
 		int suma=0;
@@ -73,7 +100,6 @@ public class Burbuja {
 		}
 	}
 	System.out.println("\nLos numeros mayores al promedio son: ");
-	imprime.ImprimeInt(copia);//METODO REUTILIZADO DE OTRO PROGRAMA QUE IMPRIME VECTORES INT
-
+	imprime.ImprimeInt(copia);
 	}
 }
