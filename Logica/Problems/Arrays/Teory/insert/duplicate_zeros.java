@@ -11,7 +11,7 @@ public class duplicate_zeros {
 
 
 
-        LA SOLUCION OFICIAL AL PROBLEMA ERA MUY PARECIDA A ESTA, FUE UN PROBLEMA MUY COMPLEJO, SIN EMBARGO EXISTIA UNA SOLUCIÓN MAS SENCILLA LA CUAL ERA 
+        LA SOLUCION OFICIAL AL PROBLEMA ERA MUY PARECIDA A LA QUE YO HICE, FUE UN PROBLEMA MUY COMPLEJO, SIN EMBARGO EXISTIA UNA SOLUCIÓN MAS SENCILLA LA CUAL ERA 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
                 for (int j = arr.length - 1; j > i; j--) {
@@ -20,6 +20,8 @@ public class duplicate_zeros {
                 i++; // we don't want to traverse over the duplicate zero
             }
         }
+
+
         */
 
 
