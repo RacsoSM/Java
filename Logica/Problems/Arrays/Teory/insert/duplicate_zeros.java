@@ -7,6 +7,19 @@ public class duplicate_zeros {
         Example:1
         Input: arr = [1,0,2,3,0,4,5,0]
         Output: [1,0,0,2,3,0,0,4]
+
+
+
+
+        LA SOLUCION OFICIAL AL PROBLEMA ERA MUY PARECIDA A ESTA, FUE UN PROBLEMA MUY COMPLEJO, SIN EMBARGO EXISTIA UNA SOLUCIÓN MAS SENCILLA LA CUAL ERA 
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
+                for (int j = arr.length - 1; j > i; j--) {
+                    arr[j] = arr[j-1];
+                }
+                i++; // we don't want to traverse over the duplicate zero
+            }
+        }
         */
 
 
@@ -19,6 +32,7 @@ public class duplicate_zeros {
         System.out.println("Output:");
         max_consecutive_ones.ImprimeInt(arr);
     }
+
 
     public static void duplicateZeros(int[] arr) {
         int x=0;
