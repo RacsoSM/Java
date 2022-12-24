@@ -8,13 +8,27 @@ public class remove_element {
         System.out.println("ARRAY INICIAL");
         ImprimeInt(nums);
 
-        removeElement(nums,val);
+        removeElement2(nums,val);
 
         System.out.println("ARRAY FINAL");
         ImprimeInt(nums);
         
     }
 
+    public static int removeElement2(int[] nums, int val) {
+        int x=0,k=0;
+        for (int i=0;i<nums.length;i++){
+            
+           if(nums[i]!=val){
+              // System.out.println("entrada numero "+x);
+             nums[x]=nums[i]; 
+               x++;
+           }
+        
+        }
+        
+        return x;
+    }
     public static int removeElement(int[] nums, int val) {
       
         int k=0,x=0;
