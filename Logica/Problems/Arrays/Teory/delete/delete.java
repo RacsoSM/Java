@@ -15,7 +15,18 @@ public class delete {
 
         System.out.println("ARRAY ORIGINAL");
         remove_element.ImprimeInt(intArray);
+
+        System.out.println("\n\nARRAY ELIMINANDO ULTIMO ELEMENTO");
+        delete_first(intArray, length);
+      
+       
         
+    } 
+    public static void delete_first (int [] intArray, int length){
+        length--;
+        for(int i=0;i<length;i++){
+            System.out.println("Index " + i + " contains " + intArray[i]);
+        }
     }
 
    
