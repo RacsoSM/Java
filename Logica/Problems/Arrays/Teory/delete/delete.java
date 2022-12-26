@@ -20,8 +20,12 @@ public class delete {
         delete_last(intArray, length);
       */
 
-      System.out.println("\n\nARRAY ELIMINANDO PRIMER ELEMENTO");
+      /*System.out.println("\n\nARRAY ELIMINANDO PRIMER ELEMENTO");
       delete_first(intArray, length);
+      remove_element.ImprimeInt(intArray); */
+
+      System.out.println("\n\nARRAY ELIMINANDO SEGUNDO ELEMENTO (SIRVE CON CUALQUIER ELEMENTO)");
+      delete_anywhere(intArray, length);
       remove_element.ImprimeInt(intArray);
         
     } 
@@ -40,11 +44,22 @@ public class delete {
             intArray[i - 1] = intArray[i];
         }
 
-        // Note that it's important to reduce the length of the array by 1.
-        // Otherwise, we'll lose consistency of the size. This length
+        // Note that it's important to reduce the length of the array by 1. Otherwise, we'll lose consistency of the size. This length
         // variable is the only thing controlling where new elements might get added.
-     
+
         length--;
+    }
+
+    public static void delete_anywhere (int [] intArray, int length){
+       // Say we want to delete the element at index 1
+    for (int i = 2; i < length; i++) {
+        // Shift each element one position to the left
+        intArray[i - 1] = intArray[i];
+    }
+
+    // Again, the length needs to be consistent with the current
+    // state of the array.
+    length--;
     }
 
    
