@@ -57,8 +57,7 @@ public class delete {
         intArray[i - 1] = intArray[i];
     }
 
-    // Again, the length needs to be consistent with the current
-    // state of the array.
+    // Again, the length needs to be consistent with the current state of the array.
     length--;
     }
 
