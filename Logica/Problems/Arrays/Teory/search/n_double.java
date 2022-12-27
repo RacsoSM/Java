@@ -2,7 +2,14 @@ public class n_double {
     
     public static void main(String[] args) {
         
-    
+     /*Given an array arr of integers, check if there exist two indices i and j such that :
+        i != j
+        0 <= i, j < arr.length
+        arr[i] == 2 * arr[j] 
+        
+        
+        */
+
         int arr [] = {10,2,5,3};
         System.out.println("Se cumplen las caracteristicas requeridas?: "+checkIfExist(arr));
 
