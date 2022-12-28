@@ -1,7 +1,11 @@
 public class mountain_array {
     
     public static void main(String[] args) {
-        
+
+
+    int arr [] = {0,3,2,1};
+
+    System.out.println("El array es un mountain array?: "+(validMountainArray(arr)));
     }
     public static boolean validMountainArray(int[] arr) {
         int count = 0;
@@ -44,4 +48,5 @@ public class mountain_array {
     }
     return true;
     
+}
 }
