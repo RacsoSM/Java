@@ -7,8 +7,11 @@ public class in_place {
         Output: [81, -2, 81, 11, 3136, -12, 9]
         Explanation: The numbers at even indexes (0, 2, 4, 6) have been squared, 
         whereas the numbers at odd indexes (1, 3, 5) have been left the same.
-         
-        there are two ways we could approach it.
+         there are two ways we could approach it.
+
+
+         Podemos usar cualquiera de los dos metodos, sin embargo se considera mas correcto usar el segundo,
+         pues es el que menos recursos gasta y hace el codigo más sencillo.
         */
         int array [] = {9,-2,-9,11,56,-12,-3};
         int length = array.length;
