@@ -12,6 +12,8 @@ public class move_zeroes {
         Input: nums = [0]
         Output: [0]
 
+        Este programa es in-place porque cambiamos los elementos dentro del mismo array sin tener que copiarlo a otro
+
         */
 
         int nums [] = {0,1,0,3,12};
