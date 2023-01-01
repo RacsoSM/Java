@@ -12,7 +12,12 @@ public class sort_array_parity {
 
         Example 2:
         Input: nums = [0]
-        Output: [0]*/
+        Output: [0]
+        
+        
+        Constraints:
+        1 <= nums.length <= 5000
+        0 <= nums[i] <= 5000*/
 
 
     }
