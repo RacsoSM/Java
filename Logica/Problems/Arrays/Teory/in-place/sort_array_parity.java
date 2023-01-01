@@ -1,4 +1,4 @@
-import remove_duplicates;
+import remove_duplicates; //IMPORTAMOS ESTE ARCHIVO PARA USAR SU CLASE IMPRIME INT 
 public class sort_array_parity {
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class sort_array_parity {
 
         int nums [] = {3,1,2,4};
         System.out.println("ARRAY ORIGINAL");
-        remove_duplicates.ImprimeInt(nums);
+        remove_duplicates.ImprimeInt(nums); 
         
 
         sortArrayByParity(nums);
