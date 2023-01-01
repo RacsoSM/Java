@@ -23,14 +23,38 @@ public class sort_array_parity {
         System.out.println("ARRAY ORIGINAL");
         ImprimeInt(nums);
 
-
+        sortArrayByParity(nums);
+        System.out.println("\n\nARRAY FINAL");
+        ImprimeInt(nums);
 
 
     }
 
+    public static int[] sortArrayByParity(int[] nums) {
+        int aux=0;
+            for(int i=0;i<nums.length;i++){
+             
+             for(int y=0;y<nums.length-1;y++){
+                 
+                 if((nums[y]%2!=0)&&(nums[y+1]%2==0)){
+                     
+                     aux=nums[y];
+                     nums[y]=nums[y+1];
+                     nums[y+1]=aux;
+                 
+                     
+                 }
+             
+             }
+         }    
+         
+         return nums;
+         
+     }
 
 
-    
+
+
     public static void ImprimeInt(int [] V){ 
         for (int i = 0; i < V.length; i++) {
             
