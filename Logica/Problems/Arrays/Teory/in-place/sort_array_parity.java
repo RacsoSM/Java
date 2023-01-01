@@ -1,3 +1,4 @@
+import remove_duplicates;
 public class sort_array_parity {
 
     public static void main(String[] args) {
@@ -21,12 +22,12 @@ public class sort_array_parity {
 
         int nums [] = {3,1,2,4};
         System.out.println("ARRAY ORIGINAL");
-        ImprimeInt(nums);
+        remove_duplicates.ImprimeInt(nums);
+        
 
         sortArrayByParity(nums);
         System.out.println("\n\nARRAY FINAL");
-        ImprimeInt(nums);
-
+        remove_duplicates.ImprimeInt(nums);
 
     }
 
@@ -52,15 +53,5 @@ public class sort_array_parity {
          
      }
 
-
-
-
-    public static void ImprimeInt(int [] V){ 
-        for (int i = 0; i < V.length; i++) {
-            
-                System.out.println("["+V[i]+"]"+" Pos "+ i);
-            
-        }
-    }
     
 }
