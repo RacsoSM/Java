@@ -30,11 +30,15 @@ public class remove_elements {
         0 <= val <= 100*/
 
         int nums [] = {0,1,2,2,3,0,4,2};
-      
         int val = 2;
-        
-
+        System.out.println("ARRAY ORIGINAL");
+        ImprimeInt(nums);
+        System.out.println("EL NUMERO A ELIMINAR ES "+val);
+    
          removeElement(nums, val);
+
+         System.out.println("ARRAY FINAL");
+         ImprimeInt(nums);
 
     }
 
