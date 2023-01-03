@@ -27,6 +27,10 @@ public class remove_elements {
         0 <= nums.length <= 100
         0 <= nums[i] <= 50
         0 <= val <= 100*/
+
+        int nums [] = {0,1,2,2,3,0,4,2};
+        int val = 2;
+
     }
     
 }
