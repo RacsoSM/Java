@@ -1,4 +1,4 @@
-import remove_duplicates; 
+
 public class remove_elements {
     public static void main(String[] args) {
         
@@ -30,7 +30,9 @@ public class remove_elements {
         0 <= val <= 100*/
 
         int nums [] = {0,1,2,2,3,0,4,2};
+      
         int val = 2;
+        
 
          removeElement(nums, val);
 
@@ -48,6 +50,14 @@ public class remove_elements {
         }
         
         return x;
+    }
+
+    public static void ImprimeInt(int [] V){ 
+        for (int i = 0; i < V.length; i++) {
+            
+                System.out.println("["+V[i]+"]"+" Pos "+ i);
+            
+        }
     }
     
 }
