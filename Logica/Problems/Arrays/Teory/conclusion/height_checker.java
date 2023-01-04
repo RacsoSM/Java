@@ -33,9 +33,21 @@ public class height_checker {
         
         
         Constraints:
-
         1 <= heights.length <= 100
         1 <= heights[i] <= 100*/
+
+        int heights [] = {1,1,4,2,1,3};
+        System.out.println("ARRAY ORIGINAL"); 
+        ImprimeInt(heights);
+
+    }
+
+    public static void ImprimeInt(int [] V){ 
+        for (int i = 0; i < V.length; i++) {
+            
+                System.out.println("["+V[i]+"]"+" Pos "+ i);
+            
+        }
     }
     
 }
