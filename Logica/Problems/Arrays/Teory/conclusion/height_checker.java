@@ -29,7 +29,13 @@ public class height_checker {
         Explanation:
         heights:  [1,2,3,4,5]
         expected: [1,2,3,4,5]
-        All indices match.*/
+        All indices match.
+        
+        
+        Constraints:
+
+        1 <= heights.length <= 100
+        1 <= heights[i] <= 100*/
     }
     
 }
