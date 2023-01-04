@@ -42,6 +42,25 @@ public class height_checker {
 
     }
 
+    public int heightChecker(int[] heights) {
+        int k=0;
+        int aux [] = new int [heights.length];
+        
+        for (int i=0;i<heights.length;i++){
+            aux[i]=heights[i];
+        }
+        
+        Arrays.sort(aux);
+        
+        for(int y=0;y<heights.length;y++){
+            if(heights[y]!=aux[y]){
+                k++;
+            }
+        }
+        
+        return k;
+    }
+
     public static void ImprimeInt(int [] V){ 
         for (int i = 0; i < V.length; i++) {
             
