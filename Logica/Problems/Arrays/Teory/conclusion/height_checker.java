@@ -41,9 +41,13 @@ public class height_checker {
         System.out.println("ARRAY ORIGINAL"); 
         ImprimeInt(heights);
 
+        int x=heightChecker(heights);
+        
+        System.out.println("\n\nNUMERO DE INCONGRUENCIAS: "+x);
+
     }
 
-    public int heightChecker(int[] heights) {
+    public static int heightChecker(int[] heights) {
         int k=0;
         int aux [] = new int [heights.length];
         
@@ -58,6 +62,9 @@ public class height_checker {
                 k++;
             }
         }
+        
+        System.out.println("\n\nARRAY ESPERADO"); 
+        ImprimeInt(aux);
         
         return k;
     }
