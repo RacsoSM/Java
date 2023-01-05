@@ -26,6 +26,10 @@ public class third_maximum_number {
         The first distinct maximum is 3.
         The second distinct maximum is 2 (both 2's are counted together since they have the same value).
         The third distinct maximum is 1.
+
+        Constraints:
+        1 <= nums.length <= 104
+        -231 <= nums[i] <= 231 - 1
         */
     }
     
