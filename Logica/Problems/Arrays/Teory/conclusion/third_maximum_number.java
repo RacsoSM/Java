@@ -32,5 +32,32 @@ public class third_maximum_number {
         -231 <= nums[i] <= 231 - 1
         */
     }
+    public int thirdMax(int[] nums) {
+        int x=0,res=0,aux=0;
+          Arrays.sort(nums);
+        
+        if(nums.length<3){
+            res=nums[nums.length-1];
+        }
+        
+        for(int i=nums.length-1;i>0;i--){
+           
+            if(nums[i]!=nums[i-1]){
+                x++;
+            }
+            
+            if(x==2){
+                 res=nums[i-1];
+                 break;
+            }
+            
+            else{
+               res=nums[nums.length-1];
+            }
+        
+        }
+   
+        return res;
+    }
     
 }
