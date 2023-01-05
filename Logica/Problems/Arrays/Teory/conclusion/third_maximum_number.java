@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class third_maximum_number {
 
     public static void main(String[] args) {
@@ -31,8 +32,11 @@ public class third_maximum_number {
         1 <= nums.length <= 104
         -231 <= nums[i] <= 231 - 1
         */
+        int nums [] = {2,2,3,1};
+        thirdMax(nums);
+        
     }
-    public int thirdMax(int[] nums) {
+    public static int thirdMax(int[] nums) {
         int x=0,res=0,aux=0;
           Arrays.sort(nums);
         
