@@ -32,8 +32,16 @@ public class third_maximum_number {
         1 <= nums.length <= 104
         -231 <= nums[i] <= 231 - 1
         */
+
+        int res=0;
         int nums [] = {2,2,3,1};
-        thirdMax(nums);
+
+        System.out.println("ARRAY ORIGINAL");
+        ImprimeInt(nums);
+
+        res=thirdMax(nums);
+
+        System.out.println("El tercer numero mayor es: "+res);
         
     }
     public static int thirdMax(int[] nums) {
