@@ -19,5 +19,31 @@ public class numbers_missed {
         */
     }
 
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        ArrayList <Integer> miss = new ArrayList <Integer>();
+  
+    
+       for (int i = 0; i < nums.length; ++i) {
+            while (nums[i] != i + 1 && nums[nums[i] - 1] != nums[i]) {
+                swap(nums, i, nums[i] - 1);
+            }
+        }
+        
+        for (int i = 0; i < nums.length; ++i) {
+           // System.out.println("nums[i] = "+nums[i]);
+             //System.out.println("i = "+i);
+            if (nums[i] != i + 1) {
+                miss.add(i + 1);
+            }
+        }
+        return miss;
+    }
+    
+    void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+
     
 }
