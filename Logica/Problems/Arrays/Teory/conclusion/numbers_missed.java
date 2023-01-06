@@ -24,9 +24,6 @@ public class numbers_missed {
         ImprimeInt(nums);
 
         findDisappearedNumbers(nums);
-
-        
-
     }
 
     public static void findDisappearedNumbers(int[] nums) {
@@ -40,8 +37,6 @@ public class numbers_missed {
         }
         
         for (int i = 0; i < nums.length; ++i) {
-           // System.out.println("nums[i] = "+nums[i]);
-             //System.out.println("i = "+i);
             if (nums[i] != i + 1) {
                 miss.add(i + 1);
             }
@@ -65,6 +60,8 @@ public class numbers_missed {
         nums[i] = nums[j];
         nums[j] = tmp;
     }
+
+
 
     public static void ImprimeInt(int [] V){ 
         for (int i = 0; i < V.length; i++) {
