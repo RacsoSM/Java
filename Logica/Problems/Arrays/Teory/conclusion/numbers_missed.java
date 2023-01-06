@@ -64,10 +64,8 @@ public class numbers_missed {
 
 
     public static void ImprimeInt(int [] V){ 
-        for (int i = 0; i < V.length; i++) {
-            
-                System.out.println("["+V[i]+"]"+" Pos "+ i);
-            
+        for(int i:V){
+            System.out.println("["+i+"]");
         }
     }
 
