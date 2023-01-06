@@ -21,12 +21,11 @@ public class numbers_missed {
         ArrayList <Integer> miss = new ArrayList <Integer>();
         System.out.println("ARRAYLIST ORIGINAL:");
         int nums [] = {4,3,2,7,8,2,3,1};
+        ImprimeInt(nums);
 
         findDisappearedNumbers(nums);
 
-        for (int x = 0; x < miss.size(); x++) {
-            System.out.println(miss.get(x));
-          }
+        
 
     }
 
@@ -47,6 +46,17 @@ public class numbers_missed {
                 miss.add(i + 1);
             }
         }
+
+        System.out.println("\n\nNUMEROS FALTANTES");
+
+        for (int num : miss) {
+			System.out.println(miss);
+		}
+
+        /*for (int x = 0; x < miss.size(); x++) {
+			int num = miss.get(x);
+			System.out.println(num);
+		}*/
         
     }
     
