@@ -11,6 +11,11 @@ public class numbers_missed {
         Example 2:
         Input: nums = [1,1]
         Output: [2]
+
+        Constraints:
+        n == nums.length
+        1 <= n <= 105
+        1 <= nums[i] <= n
         */
     }
 
