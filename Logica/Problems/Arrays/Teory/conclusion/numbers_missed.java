@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class numbers_missed {
     
     public static void main(String[] args) {
@@ -17,9 +18,19 @@ public class numbers_missed {
         1 <= n <= 105
         1 <= nums[i] <= n
         */
+        ArrayList <Integer> miss = new ArrayList <Integer>();
+        System.out.println("ARRAYLIST ORIGINAL:");
+        int nums [] = {4,3,2,7,8,2,3,1};
+
+        findDisappearedNumbers(nums);
+
+        for (int x = 0; x < miss.size(); x++) {
+            System.out.println(miss.get(x));
+          }
+
     }
 
-    public List<Integer> findDisappearedNumbers(int[] nums) {
+    public static void findDisappearedNumbers(int[] nums) {
         ArrayList <Integer> miss = new ArrayList <Integer>();
   
     
@@ -36,13 +47,21 @@ public class numbers_missed {
                 miss.add(i + 1);
             }
         }
-        return miss;
+        
     }
     
-    void swap(int[] nums, int i, int j) {
+    public static void swap(int[] nums, int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
+    }
+
+    public static void ImprimeInt(int [] V){ 
+        for (int i = 0; i < V.length; i++) {
+            
+                System.out.println("["+V[i]+"]"+" Pos "+ i);
+            
+        }
     }
 
     
