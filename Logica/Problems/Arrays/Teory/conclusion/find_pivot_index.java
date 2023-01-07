@@ -33,5 +33,30 @@ public class find_pivot_index {
         -1000 <= nums[i] <= 1000
         */
     }
+
+    public static int pivotIndex(int[] nums) {
+        int y=0,x=0;
+        
+        for(int i=0;i<nums.length;i++){
+            x=0;y=0;
+            
+            
+            for(int left=i-1;left>-1;left--){
+                x+=nums[left];
+            }
+            
+            for(int right=i+1;right<nums.length;right++){
+                y+=nums[right];
+            }
+            
+            
+            if(x==y){
+                return i;
+            }
+            
+        }
+        
+        return -1;
+    }
     
 }
