@@ -40,7 +40,6 @@ public class find_pivot_index {
         for(int i=0;i<nums.length;i++){
             x=0;y=0;
             
-            
             for(int left=i-1;left>-1;left--){
                 x+=nums[left];
             }
@@ -49,7 +48,6 @@ public class find_pivot_index {
                 y+=nums[right];
             }
             
-            
             if(x==y){
                 return i;
             }
@@ -57,6 +55,12 @@ public class find_pivot_index {
         }
         
         return -1;
+    }
+
+    public static void ImprimeInt(int[] n){
+        for(int i:n){
+            System.out.println("["+i+"]");
+        }
     }
     
 }
