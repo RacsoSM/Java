@@ -32,6 +32,14 @@ public class find_pivot_index {
         1 <= nums.length <= 104
         -1000 <= nums[i] <= 1000
         */
+        int nums [] = {1,7,3,6,5,6};
+        System.out.println("ARRAY ORIGINAL");
+        ImprimeInt(nums);
+
+       
+
+        System.out.println("El resultado es el indice numero "+pivotIndex(nums));
+
     }
 
     public static int pivotIndex(int[] nums) {
@@ -58,9 +66,11 @@ public class find_pivot_index {
     }
 
     public static void ImprimeInt(int[] n){
+
         for(int i:n){
             System.out.println("["+i+"]");
         }
+
     }
     
 }
