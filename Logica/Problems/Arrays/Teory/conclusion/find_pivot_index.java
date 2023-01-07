@@ -27,6 +27,10 @@ public class find_pivot_index {
         The pivot index is 0.
         Left sum = 0 (no elements to the left of index 0)
         Right sum = nums[1] + nums[2] = 1 + -1 = 0
+
+        Constraints:
+        1 <= nums.length <= 104
+        -1000 <= nums[i] <= 1000
         */
     }
     
