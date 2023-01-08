@@ -18,7 +18,7 @@ public class largest_number {
         Constraints:
         2 <= nums.length <= 50
         0 <= nums[i] <= 100
-        The largest element in nums is unique.
+        The largest element in nums is unique. 
         */
 
         int nums [] = {3,6,1,0};
