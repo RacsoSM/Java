@@ -15,6 +15,11 @@ public class largest_numbers_twice_others {
         Input: nums = [1,2,3,4]
         Output: -1
         Explanation: 4 is less than twice the value of 3, so we return -1.
+
+        Constraints:
+        2 <= nums.length <= 50
+        0 <= nums[i] <= 100
+        The largest element in nums is unique.
         */
 
     }
