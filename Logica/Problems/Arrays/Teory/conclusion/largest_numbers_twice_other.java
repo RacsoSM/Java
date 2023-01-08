@@ -23,4 +23,27 @@ public class largest_numbers_twice_others {
         */
 
     }
+
+    public int dominantIndex(int[] nums) {
+        int sec=-1,may=-1,k=0;
+        
+        for(int i=0;i<nums.length;i++){
+           if(nums[i]>may){
+              may=nums[i];
+              k=i;
+           }
+        }
+        
+        for(int y=0;y<nums.length;y++){
+            if(nums[y]>sec && nums[y]<may){
+                sec=nums[y];
+            }
+        }
+        
+        if((may/2)>=sec) {
+            return k;
+        }
+     
+        return -1;
+    }
 }
