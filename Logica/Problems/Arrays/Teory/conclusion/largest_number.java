@@ -1,5 +1,4 @@
-public class largest_numbers_twice_others{
-
+public class largest_number {
     public static void main(String[] args){
         /*You are given an integer array nums where the largest integer is unique.
         Determine whether the largest element in the array is at least twice as much as every other number in the array. If it is, return the index of the largest element, or return -1 otherwise. 
@@ -24,14 +23,14 @@ public class largest_numbers_twice_others{
 
         int nums [] = {3,6,1,0};
         System.out.println("ARRAY ORIGINAL");
-       // ImprimeInt(nums);
+        ImprimeInt(nums);
 
-       // System.out.println("EL RESULTADO ES : "+dominantIndex(nums));
+        System.out.println("EL RESULTADO ES EL INDEX:  "+dominantIndex(nums));
     }
 
    
 
-  /*   public static int dominantIndex(int[] nums) {
+     public static int dominantIndex(int[] nums) {
         int sec=-1,may=-1,k=0;
         
         for(int i=0;i<nums.length;i++){
@@ -58,6 +57,6 @@ public class largest_numbers_twice_others{
         for(int i:V){
             System.out.println("["+i+"]");
         }
-    }*/
-
+    }
+    
 }
