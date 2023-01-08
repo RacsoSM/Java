@@ -24,7 +24,7 @@ public class largest_numbers_twice_others {
 
     }
 
-    public int dominantIndex(int[] nums) {
+    public static int dominantIndex(int[] nums) {
         int sec=-1,may=-1,k=0;
         
         for(int i=0;i<nums.length;i++){
@@ -46,4 +46,11 @@ public class largest_numbers_twice_others {
      
         return -1;
     }
+
+    public static void ImprimeInt(int[] V){
+        for(int i:V){
+            System.out.println("["+i+"]");
+        }
+    }
+
 }
