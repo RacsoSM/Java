@@ -31,6 +31,13 @@ public class plus_one {
         0 <= digits[i] <= 9
         digits does not contain any leading 0's.
         */
+        int digits [] = {9,9,9};
+        System.out.println("ARRAY INICIAL");
+        ImprimeInt(digits);
+
+        plusOne(digits);
+        
+
     }
 
     public static int[] plusOne(int[] digits) {
@@ -55,7 +62,8 @@ public class plus_one {
                answer[k-1]++;
              } 
          }
-         
+        System.out.println("\n\n\nARRAY FINAL");
+         ImprimeInt(answer);
          return answer;
      }
 
@@ -76,7 +84,7 @@ public class plus_one {
 
     public static void ImprimeInt(int[] V){
         for(int i:V){
-            System.out.println("["+i+"]");
+            System.out.print("["+i+"]");
         }
     }
     
