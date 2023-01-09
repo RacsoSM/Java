@@ -33,7 +33,7 @@ public class plus_one {
         */
     }
 
-    public int[] plusOne(int[] digits) {
+    public static int[] plusOne(int[] digits) {
         int p=digits.length;
         boolean flag=false;
          
@@ -58,5 +58,20 @@ public class plus_one {
          
          return answer;
      }
+
+     public static boolean high (int [] digits){
+        int v=0;
+        for(int w=0;w<digits.length;w++){
+            if(digits[w]==9){
+                v++;
+            }
+        }
+       
+        if(v==digits.length){
+            return true;
+        }
+       
+        return false;
+    }
     
 }
