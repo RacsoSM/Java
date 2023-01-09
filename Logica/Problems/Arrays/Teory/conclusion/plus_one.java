@@ -32,5 +32,31 @@ public class plus_one {
         digits does not contain any leading 0's.
         */
     }
+
+    public int[] plusOne(int[] digits) {
+        int p=digits.length;
+        boolean flag=false;
+         
+         flag=high(digits);
+         if(flag==true)   p=digits.length+1;
+          
+         int answer [] = new int [p];
+         
+         for(int i =0;i<digits.length;i++){
+             if(digits[digits.length-1]==9 && flag ==true) answer[i+1]=digits[i];
+             else    answer[i]=digits[i];      
+         }
+         
+         answer[answer.length-1]++;
+          
+         for(int k=answer.length-1;k>0;k--){
+             if( answer[k]>9){
+               answer[k]=0;
+               answer[k-1]++;
+             } 
+         }
+         
+         return answer;
+     }
     
 }
