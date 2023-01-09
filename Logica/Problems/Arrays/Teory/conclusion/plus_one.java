@@ -73,5 +73,11 @@ public class plus_one {
        
         return false;
     }
+
+    public static void ImprimeInt(int[] V){
+        for(int i:V){
+            System.out.println("["+i+"]");
+        }
+    }
     
 }
