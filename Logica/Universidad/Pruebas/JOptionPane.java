@@ -16,5 +16,6 @@ public class JOptionPane {
         decimal= Double.parseDouble(javax.swing.JOptionPane.showInputDialog( "Digite un decimal: "));
 
         javax.swing.JOptionPane.showMessageDialog(null, "La cadena es "+cadena);
+        javax.swing.JOptionPane.showMessageDialog(null, "El entero es "+entero);
     }
 }
