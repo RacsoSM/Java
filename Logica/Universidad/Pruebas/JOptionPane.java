@@ -11,5 +11,6 @@ public class JOptionPane {
         double decimal;
 
         cadena = javax.swing.JOptionPane.showInputDialog( "Digite una cadena: ");
+        entero= Integer.parseInt(javax.swing.JOptionPane.showInputDialog( "Digite un entero: "));
     }
 }
