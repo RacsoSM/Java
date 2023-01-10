@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class pascal_triangle {
     public static void main(String[] args) {
        /*Given an integer numRows, return the first numRows of Pascal's triangle.
