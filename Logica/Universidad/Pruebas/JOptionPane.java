@@ -12,5 +12,7 @@ public class JOptionPane {
 
         cadena = javax.swing.JOptionPane.showInputDialog( "Digite una cadena: ");
         entero= Integer.parseInt(javax.swing.JOptionPane.showInputDialog( "Digite un entero: "));
+        letra = javax.swing.JOptionPane.showInputDialog("Digite un caracter: ").charAt(0);
+        
     }
 }
