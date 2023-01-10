@@ -1,3 +1,4 @@
+
 public class pascal_triangle {
     public static void main(String[] args) {
        /*Given an integer numRows, return the first numRows of Pascal's triangle.
@@ -20,9 +21,11 @@ public class pascal_triangle {
         Constraints:
         1 <= numRows <= 30
         */
+        int numRows = 9;
+        generate(numRows);
     }
 
-    public List<List<Integer>> generate(int numRows) {
+    public static List<List<Integer>> generate(int numRows) {
         if(numRows == 0) return new ArrayList();
          List<List<Integer>> res = new ArrayList();
  
@@ -33,11 +36,18 @@ public class pascal_triangle {
                      row.add(1);
                  }else{
                      row.add(res.get(i-2).get(j) + res.get(i-2).get(j-1));
-                 }       
+                 } 
+                 System.out.print("["+row.get(j)+"]");      
              }
+             System.out.println();
+           
              res.add(row);
          }
          return res;
      }
+
+    
+
+
     
 }
