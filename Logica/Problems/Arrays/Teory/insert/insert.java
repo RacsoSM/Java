@@ -59,5 +59,37 @@ public class insert {
         
  
      }
+
+     public static void otroEjemplo (){
+        //ESTE EJEMPLO HACE UN ESPACIO EN CUALQUIER LUGAR DEL ARRAY DUPLICANDOLO Y DEJANDO EL ESPACIO DUPLICADO PARA NOSOTROS INGRESAR UN NUMERO
+        /*
+         * EJEMPLO:
+         * 2,3,4,5,6,7,8,9,0,0
+         * NOSOTROS PEDIMOS LA POSICION 3 Y EL NUMERO 999
+         * QUEDARIA ASI:
+         * 2,3,4,5,5,6,7,8,9,0
+         * PARA LUEGO EN EL LUGAR DEL 5 DUPLICADO QUE ES EL INDICE 3, COLOCAR NUESTRO NUMERO Y QUEDAR ASI
+         * 2,3,4,999,5,6,7,8,9,0
+         */
+        int arr [] = new int [10];
+        int num=0,pos=0,aux=0;
+ 
+        for(int i=0;i<8;i++)  arr[i]=i+2;
+ 
+        System.out.println("Ingrese el numero: "); num=sc.nextInt();
+        System.out.println("Ingrese la posicion: "); pos=sc.nextInt();
+ 
+        
+        for(int i=8;i>=pos;i--){
+         arr[i+1]=arr[i];
+        }
+        arr[pos]=num;
+     
+ 
+        for(int i:arr){
+         System.out.println(i);
+        }
+     }
+     
     
 }
