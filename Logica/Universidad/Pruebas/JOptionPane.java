@@ -18,5 +18,6 @@ public class JOptionPane {
         javax.swing.JOptionPane.showMessageDialog(null, "La cadena es "+cadena);
         javax.swing.JOptionPane.showMessageDialog(null, "El entero es "+entero);
         javax.swing.JOptionPane.showMessageDialog(null, "El caracter es "+letra);
+        javax.swing.JOptionPane.showMessageDialog(null, "El numero decimal es "+decimal);
     }
 }
