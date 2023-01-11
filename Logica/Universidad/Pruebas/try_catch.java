@@ -10,7 +10,10 @@ public class try_catch {
             //sentencias si se encuentra el error
          }
 
-         en caso de no encontrarse problemas o errores, solo se ejecutará el metodo try, si se encuentra el problema se ejecutará el metodo catch.
+         en caso de no encontrarse problemas o errores, solo se ejecutará el metodo try, si se encuentra el problema se ejecutará el metodo catch. se puede tener mas de un catch, teniendo
+         rutas de escape para diferentes errores e informandole al usuario que salió mal.
+
+         finally es un complemento del try catch que es una parte del codigo que se ejecutará se haya entrado o no al catch
          */
 
          String cadena ="pedro julian";//dato que nos dará error en el try por lo tanto se ejecutará el catch
@@ -28,6 +31,9 @@ public class try_catch {
 
             System.out.println("No es un numero, es una cadena");
 
+         }
+         finally{
+            System.out.println("\nProceso terminado."); //parte del codigo que se ejecutará sin importar que se haya entrado o no al catch
          }
 
        /*Para identificar el tipo de error que podemos tener, el programa al ejecutarlo nos lo dice
