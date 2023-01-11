@@ -23,6 +23,26 @@ public class Operador_Ternario {
         //Si la condicion es true, toma el primer valor y si es false, toma el segundo valor
 
         System.out.println(mensaje);
+
+
+
+
+        char k;
+       // System.out.println("\n\n\nDigite una letra: "); k=sc.next().charAt(0);
+       // compruebaMayuscula(k);
+
     }   
+
+
+
+
+    //OTRO EJEMPLO DEL USO DEL OPERADOR TERNARIO, DETERMINANDO SI UN CHAR ES MAYUSCULA O MINUSCULA
+    public static void compruebaMayuscula (char k){
+        String answer;
+        
+        answer = (Character.isUpperCase(k)) ? "MAYUSCULA" : "MINUSCULA";
+
+        System.out.println("La letra "+k+" es "+answer);
+    }
     
 }
