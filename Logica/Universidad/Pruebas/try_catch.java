@@ -23,7 +23,9 @@ public class try_catch {
             System.out.println("No es un numero, es una cadena");
          }
 
-       
+       /*Para identificar el tipo de error que podemos tener, el programa al ejecutarlo nos lo dice
+        * en un texto tipo main error in : "nombre del errror", ese es el que meteremos en el catch
+        */
 
 
 
