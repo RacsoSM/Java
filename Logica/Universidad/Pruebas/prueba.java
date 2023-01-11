@@ -6,8 +6,56 @@ import java.util.Arrays;
 public class prueba {
 
 	public static void main(String[] args) {
+	
+		int arr [] = { 10,11,12,13,14,15,16,17,18,19};
+		int num = 5;
+
+		for(int i=num;i<arr.length-1;i++){
+			arr[i]=arr[i+1];
+		}
 		
+		for(int i=0;i<arr.length-1;i++){
+			System.out.println(arr[i]);
+		}
+
+
 		/*
+		DESPLAZAR EL ARRAY UNA POSICION HACIA ABAJO DE MODO QUE EL PRIMER ELEMENTO PASA A SER EL SEGUNDO,
+		EL SEGUNDO AL TERCERO Y ASI SUCESIVAMENTE, EL ULTIMO PASA A SER EL PRIMERO
+		
+		int arr [] = { 10,11,12,13,14,15,16,17,18,19};
+		int k = arr[arr.length-1];
+		for(int i=arr.length-2;i>-1;i--){
+			arr[i+1]=arr[i];
+
+		}
+		arr[0]=k;
+		for(int i:arr){
+			System.out.println(i);
+		}*/
+
+
+
+
+
+
+
+
+
+
+
+		/*
+
+
+
+
+
+
+
+
+
+
+
 		 * DecimalFormat Mascara=new DecimalFormat("$###,###.##");
 		 * System.out.println("La propina que usted dejara es de: "+Mascara.format(tip)+"\n\n");
 		 */
