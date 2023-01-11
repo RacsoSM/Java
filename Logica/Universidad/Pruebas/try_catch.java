@@ -19,8 +19,11 @@ public class try_catch {
          try{
             numero=Integer.parseInt(cadena); //ERROR DE TIPO NumberFormatException, lo podemos ver ejecutando el programa
             System.out.println("Dato convertido: "+numero);
-         }catch(NumberFormatException e){
+         }catch(NumberFormatException e){ //con e nos referimos a un objeto cualquiera
+            //e.printStackTrace();      ESTA LINEA NOS MUESTRA LA PILA DE ERRORES QUE ESTAN OCURRIENDO, AUN ASI CONTINUA CON LA EJECUCION DEL PROGRAMA
+
             System.out.println("No es un numero, es una cadena");
+
          }
 
        /*Para identificar el tipo de error que podemos tener, el programa al ejecutarlo nos lo dice
