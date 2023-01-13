@@ -22,7 +22,7 @@ public class try_catch {
          try{
             numero=Integer.parseInt(cadena); //ERROR DE TIPO NumberFormatException, lo podemos ver ejecutando el programa
             System.out.println("Dato convertido: "+numero);
-            //En el catch si no conocemos el error que podria ocurrir simplemente ponemos
+            //En el catch si no conocemos el error que podria ocurrir simplemente ponemos, pero siempre es mejor usar la exepcion exacta.
             //catch(Exception e){
                 //INSTRUCCIONES DEL CATCH
             //}
