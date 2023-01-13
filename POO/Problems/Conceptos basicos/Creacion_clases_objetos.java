@@ -8,5 +8,8 @@ public class Creacion_clases_objetos {
 //class = palabra por defecto para definir una clase
 //Coche = nombre de la clase
 public class Coche{
-    
+    //Atributos
+    String color;
+    String marca;
+    int km;
 }
