@@ -13,6 +13,9 @@ public class conceptos_basicos {
          * encender()
          * acelerar()
          * frenar()
+         * 
+         * De una sola clase podemos sacar bastante objetos, sin embargo deben de tener las mismas caracteristicas, por ejemplo, muchos autos.
+         * 
         */
         
     }
