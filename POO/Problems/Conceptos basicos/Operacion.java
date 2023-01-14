@@ -18,6 +18,10 @@ public class Operacion {
         suma = numero1+numero2;
     }
 
+    //Metodo para sumar ambos numeros
+    public void resta(){
+        resta = numero1-numero2;
+    }
 
 
     
