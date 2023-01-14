@@ -28,6 +28,12 @@ public class Operacion {
         multiplicacion = numero1*numero2;
     }
 
+    
+    //Metodo para dividir ambos numeros
+    public void dividir(){
+    division = numero1/numero2;
+    }
+
 
     
 }
