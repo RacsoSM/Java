@@ -18,9 +18,14 @@ public class Operacion {
         suma = numero1+numero2;
     }
 
-    //Metodo para sumar ambos numeros
-    public void resta(){
+    //Metodo para restar ambos numeros
+    public void restar(){
         resta = numero1-numero2;
+    }
+
+    //Metodo para multiplicar ambos numeros
+    public void multiplicar(){
+        multiplicacion = numero1*numero2;
     }
 
 
