@@ -11,8 +11,12 @@ public class Operacion {
     public void leerNumeros(){
         numero1=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
         numero1=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
+    }
 
-}
+    //Metodo para sumar ambos numeros
+    public void sumar(){
+        suma = numero1+numero2;
+    }
 
 
 
