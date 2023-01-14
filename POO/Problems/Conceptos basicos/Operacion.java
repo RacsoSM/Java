@@ -34,6 +34,14 @@ public class Operacion {
     division = numero1/numero2;
     }
 
+    //Metodo para mostrar resultados
+    public void mostrarResultados(){
+        System.out.println("La suma es: "+suma);
+        System.out.println("La resta es: "+resta);
+        System.out.println("La multiplicacion es: "+multiplicacion);
+        System.out.println("La division es: "+division);
+    }
+
 
     
 }
