@@ -4,11 +4,14 @@ public class Parametros_argumentos {
 
 
     /*Declaracion de metodo:  
-     public void metodo (){
+     public void metodo (int a, String b){ //PARAMETRO
         //lineas de codigo
     } 
-    
     //Invocacion de metodo:
-    objeto.metodo();
+    objeto.metodo(1,"Hola"); //ARGUMENTO
+
+
+
+
     */
 }
