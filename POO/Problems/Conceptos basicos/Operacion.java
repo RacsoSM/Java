@@ -2,8 +2,8 @@ import javax.swing.JOptionPane;
 
 public class Operacion {
     //Atributos
-        int num1,num2,suma,resta,multiplicacion,division;
-
+      //  int num1,num2;
+int suma,resta,multiplicacion,division;
 
     //Metodos
 
@@ -14,23 +14,23 @@ public class Operacion {
     }
 
     //Metodo para sumar ambos numeros
-    public void sumar(){
-        suma = num1+num2;
+    public void sumar(int num1, int num2){ //Ya estamos usando parametros
+       suma = num1+num2;
     }
 
     //Metodo para restar ambos numeros
-    public void restar(){
+    public void restar(int num1, int num2){
         resta = num1-num2;
     }
 
     //Metodo para multiplicar ambos numeros
-    public void multiplicar(){
+    public void multiplicar(int num1, int num2){
         multiplicacion = num1*num2;
     }
 
     
     //Metodo para dividir ambos numeros
-    public void dividir(){
+    public void dividir(int num1, int num2){
         
     division =  num1/num2 ;
     }
