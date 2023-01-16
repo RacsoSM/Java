@@ -20,7 +20,8 @@ public class Parametros_argumentos {
 
         Operacion op = new Operacion(); //El objeto se crea con el nombre de la clase de la cual declaramos los atributos que en este caso es operacion.
 
-        op.sumar(n1,n2);
+        System.out.println("El resultado de la suma es: "+ op.sumar(n1,n2););
+        
         op.restar(n1, n2);
         op.multiplicar(n1, n2);
         op.dividir(n1, n2);
