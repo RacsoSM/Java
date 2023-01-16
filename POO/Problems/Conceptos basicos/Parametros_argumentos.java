@@ -23,7 +23,7 @@ public class Parametros_argumentos {
         System.out.println("El resultado de la suma es: "+ op.sumar(n1,n2));
         System.out.println("El resultado de la resta es: "+ op.restar(n1,n2));
         System.out.println("El resultado de la multiplicacion es: "+ op.multiplicar(n1,n2));
-       
+        System.out.println("El resultado de la division es: "+ op.dividir(n1,n2));
         
        
        
