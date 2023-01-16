@@ -12,25 +12,29 @@ public class Operacion {
     }
 
     //Metodo para sumar ambos numeros
-    public void sumar(int num1, int num2){ //Ya estamos usando parametros
+    public int sumar(int num1, int num2){ //Ya estamos usando parametros
        int suma = num1+num2;
+       return suma;
     }
 
     //Metodo para restar ambos numeros
-    public void restar(int num1, int num2){
+    public int restar(int num1, int num2){
         int resta = num1-num2;
+        return resta;
     }
 
     //Metodo para multiplicar ambos numeros
-    public void multiplicar(int num1, int num2){
+    public int multiplicar(int num1, int num2){
         int multiplicacion = num1*num2;
+        return multiplicacion;
     }
 
     
     //Metodo para dividir ambos numeros
-    public void dividir(int num1, int num2){
+    public int dividir(int num1, int num2){
         
     int division =  num1/num2 ;
+    return dividir;
     }
 
     //Metodo para mostrar resultados
