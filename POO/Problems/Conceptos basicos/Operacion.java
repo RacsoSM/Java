@@ -34,7 +34,7 @@ public class Operacion {
     public int dividir(int num1, int num2){
         
     int division =  num1/num2 ;
-    return dividir;
+    return division;
     }
 
     //Metodo para mostrar resultados
