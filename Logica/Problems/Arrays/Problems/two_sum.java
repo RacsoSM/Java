@@ -27,6 +27,7 @@ public class two_sum {
         int target = 18;
         int arr [] = {2,7,11,15};
         twoSum(arr, target);
+       
     }
     public static int[] twoSum(int[] nums, int target) {
         int arr [] = new int [2];
@@ -37,10 +38,12 @@ public class two_sum {
             if(nums[i]+nums[k]==target){
                 arr[x]=i;
                 arr[x+1]=k;
+                imprimeInt(arr);
                 return arr;
             }
           }
         }
+        imprimeInt(arr);
         return arr;
     }
     public static void imprimeInt (int [] nums){
