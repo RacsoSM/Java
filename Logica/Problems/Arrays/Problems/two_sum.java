@@ -24,11 +24,11 @@ public class two_sum {
         -109 <= target <= 109
         Only one valid answer exists.
         */
+        int target = 18;
+        int arr [] = {2,7,11,15};
+        twoSum(arr, target);
     }
-    
-}
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         int arr [] = new int [2];
         int x=0,aux=0;
 
@@ -48,4 +48,5 @@ class Solution {
         
         return arr;
     }
+    
 }
