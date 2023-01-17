@@ -33,20 +33,20 @@ public class two_sum {
         int x=0,aux=0;
 
         for(int i=0;i<nums.length;i++){
-     
-            
           for(int k=i+1;k<nums.length;k++){
             if(nums[i]+nums[k]==target){
                 arr[x]=i;
                 arr[x+1]=k;
                 return arr;
             }
-            
           }
-         
         }
-        
         return arr;
+    }
+    public static void imprimeInt (int [] nums){
+        for(int i:nums){
+            System.out.print(i+",");
+        }
     }
     
 }
