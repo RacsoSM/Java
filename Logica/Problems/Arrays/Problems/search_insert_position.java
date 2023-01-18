@@ -21,8 +21,10 @@ public class search_insert_position {
         nums contains distinct values sorted in ascending order.
         -104 <= target <= 104
         */
+        int nums [] = {1,3,5,6};
+        int target=2;
     }
-    public int searchInsert(int[] nums, int target) {
+    public static int searchInsert(int[] nums, int target) {
         int aux [] = new int [nums.length+1];
      
         for(int i=0;i<nums.length;i++){
