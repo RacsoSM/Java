@@ -22,5 +22,45 @@ public class search_insert_position {
         -104 <= target <= 104
         */
     }
-    
+    public int searchInsert(int[] nums, int target) {
+        int aux [] = new int [nums.length+1];
+     
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==target){
+                return i;
+            }
+            else{
+                aux[i]=nums[i];
+            }
+        }
+
+        for(int k=0;k<nums.length;k++){
+            if(aux[k]<target && aux[k+1]>target){
+                for(int w=nums.length-1;w>k;w--){
+                    aux[w+1]=aux[w];
+                }
+                aux[k+1]=target;
+                break;
+            }
+        }
+
+        if(aux[nums.length-1]<target){
+            aux[aux.length-1]=target;
+        }
+        if(aux[0]>target){
+            return 0;
+        }
+       
+       for(int i=0;i<aux.length;i++){
+            if(aux[i]==target){
+                return i;
+            }
+        }
+          return 0; //NO SE DEBERIA DE LLEGAR A ESTE PUNTO NUNCA
+    }
 }
+
+
+        
+    
+
