@@ -23,6 +23,9 @@ public class search_insert_position {
         */
         int nums [] = {1,3,5,6};
         int target=7;
+        System.out.println("El array es: ");
+        imprimeInt(nums);
+        System.out.println("El numero target es: "+target);
 
 
         System.out.println("La posicion del numero es o deberia ser: "+searchInsert(nums, target));
