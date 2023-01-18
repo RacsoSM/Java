@@ -22,7 +22,10 @@ public class search_insert_position {
         -104 <= target <= 104
         */
         int nums [] = {1,3,5,6};
-        int target=2;
+        int target=7;
+
+
+        System.out.println("La posicion del numero es o deberia ser: "+searchInsert(nums, target));
     }
     public static int searchInsert(int[] nums, int target) {
         int aux [] = new int [nums.length+1];
@@ -59,6 +62,11 @@ public class search_insert_position {
             }
         }
           return 0; //NO SE DEBERIA DE LLEGAR A ESTE PUNTO NUNCA
+    }
+    public static void imprimeInt(int []num){
+        for(int i:num){
+            System.out.println("["+i+"]");
+        }
     }
 }
 
