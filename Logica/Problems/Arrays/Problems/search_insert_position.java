@@ -28,7 +28,7 @@ public class search_insert_position {
         System.out.println("El numero target es: "+target);
 
 
-        System.out.println("La posicion del numero es o deberia ser: "+searchInsert(nums, target));
+        System.out.println("\nLa posicion del numero es o deberia ser: "+searchInsert(nums, target));
     }
     public static int searchInsert(int[] nums, int target) {
         int aux [] = new int [nums.length+1];
@@ -52,12 +52,12 @@ public class search_insert_position {
             }
         }
 
-        if(aux[nums.length-1]<target){
-            aux[aux.length-1]=target;
-        }
-        if(aux[0]>target){
-            return 0;
-        }
+        if(aux[nums.length-1]<target)  aux[aux.length-1]=target;
+            
+        
+        if(aux[0]>target) return 0;
+            
+        
        
        for(int i=0;i<aux.length;i++){
             if(aux[i]==target){
