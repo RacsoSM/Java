@@ -10,7 +10,7 @@ public class Persona {
      * La palabra this sirve para que java no se confunda con que nombre debe tomar para que valor.
      */
    public Persona(String nombre, int edad){ 
-    this.nombre = nombre; //
+    this.nombre = nombre; //El que tiene this es el atributo y el que no tiene this es el parametro
     this.edad = edad;
    }
 
