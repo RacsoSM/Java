@@ -13,6 +13,7 @@ public class Main_persona {
      * No devuelve ningun valor
      * Debe declararse como publico
      */
+    Persona p1 = new Persona("Oscar",18); //Como en Persona le dijimos al constructor que tendria dos parametros, aqui se los pasamos.
 
 
 }
