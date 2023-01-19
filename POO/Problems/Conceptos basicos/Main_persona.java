@@ -14,8 +14,10 @@ public class Main_persona {
      * Debe declararse como publico
      */
     Persona p1 = new Persona("Oscar",18); //Como en Persona le dijimos al constructor que tendria dos parametros, aqui se los pasamos.
+    Persona p2 = new Persona("Juan",20); 
 
     p1.mostrarDatos();
+    p2.mostrarDatos();
     }
     
    
