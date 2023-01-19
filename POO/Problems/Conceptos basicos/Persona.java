@@ -6,10 +6,12 @@ public class Persona {
     //Metodos
 
     //Metodo constructor
-    /*Este metodo nos sirve para inicializar nuestros atributos y debemos darle como parametros los atributos y dentro del mismo inicializarlos como se ve a continuacion. */
-   public Persona(String _nombre, int _edad){ 
-    nombre = _nombre; //
-    edad = _edad;
+    /*Este metodo nos sirve para inicializar nuestros atributos y debemos darle como parametros los atributos y dentro del mismo inicializarlos como se ve a continuacion.
+     * La palabra this sirve para que java no se confunda con que nombre debe tomar para que valor.
+     */
+   public Persona(String nombre, int edad){ 
+    this.nombre = nombre; //
+    this.edad = edad;
    }
 
    public void mostrarDatos(){

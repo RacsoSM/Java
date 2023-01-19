@@ -1,6 +1,6 @@
 public class Main_persona {
-    
-    /*Cuando se crea un objeto ocurren 3 cosas: 
+    public static void main(String[] args) {
+         /*Cuando se crea un objeto ocurren 3 cosas: 
      * Se asigna memoria para el objeto.
      * Se inicializan los atributos de ese objeto.
      * Se invoca al constructor de la clase que puede ser uno entre varios.
@@ -15,5 +15,8 @@ public class Main_persona {
      */
     Persona p1 = new Persona("Oscar",18); //Como en Persona le dijimos al constructor que tendria dos parametros, aqui se los pasamos.
 
-
+    p1.mostrarDatos();
+    }
+    
+   
 }
