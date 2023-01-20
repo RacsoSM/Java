@@ -20,7 +20,7 @@ public class Automovil {
         System.out.println("El auto "+color+" del año "+ año+ " ha empezado a acelerar");
     }
     public void acelerar (int km){ //Segundo metodo acelerar
-        System.out.println("El auto "+color+" del año "+ año+ " ha empezado a acelerar a "+km+" kilometros por hora");
+        System.out.println("El auto ha empezado a acelerar a "+km+" kilometros por hora");
     }
 
     //En una sobrecarga, los metodos solamente se distinguen por la cantidad de sus parametros o por el tipo de sus parametros.
