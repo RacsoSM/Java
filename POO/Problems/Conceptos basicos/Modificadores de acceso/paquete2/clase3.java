@@ -5,7 +5,9 @@ public class clase3 {
        
 
         /*NOTA: SI LA CLASE QUE QUEREMOS USAR ESTA ABIERTA EN LAS PESTAÑAS ARRIBA DE VS STUDIO, NOS DEJA USARLA AUN SIN IMPORTARLA, SI NO, DEBEMOS IMPORTAR SU RUTA. */
-       
+        Automovil auto1 = new Automovil(125);
+        auto1.color="rosita";
+        System.out.println(auto1.color);
 
         clase1 objeto2 = new clase1();
 
