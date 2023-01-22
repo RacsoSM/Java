@@ -4,7 +4,11 @@ public class c2 {
         c1 ob = new c1();
 
         ob.setEdad(18);
-
         System.out.println("La edad es: "+ob.getEdad());
+
+        ob.setNombre("Oscar");
+        System.out.println("El nombre es: "+ob.getNombre());
+
+
     }
 }
