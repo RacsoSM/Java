@@ -6,9 +6,10 @@ public class Estatico {
     private static String frase = "Primera frase";
 
 
-
-    
-
+    public static int sumarNumeros (int n1,int n2){
+        int suma = n1+n2;
+        return suma;
+    }
 
 
 
