@@ -7,7 +7,7 @@ public class Estatico {
 
 
 
-  
+    
 
 
 
@@ -18,9 +18,9 @@ public class Estatico {
     Estatico ob2 = new Estatico();
 
 
-    ob2.frase="Segunda frase";
+    System.out.println(Estatico.frase);
 
-   
+    ob2.frase="Segunda frase";
 
     System.out.println(ob1.frase);
     System.out.println(ob2.frase);
