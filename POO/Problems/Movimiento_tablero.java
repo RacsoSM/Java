@@ -5,9 +5,11 @@
 import java.util.Scanner;
 
 public class Movimiento_tablero {
+    //ATRIBUTOS
     private int x = 4;
     private int y = 4;
 
+    //METODOS
     public int moveUp (){
         if(y>0 && y<9)     y--;
         else               y=8;
@@ -33,8 +35,6 @@ public class Movimiento_tablero {
     }
 
     
-    
-
     public static void main(String[] args) {
         Movimiento_tablero ob = new Movimiento_tablero();//Declaramos el objeto de la clase Movimiento_tablero
 
@@ -50,7 +50,8 @@ public class Movimiento_tablero {
          
             System.out.print("Ingrese su siguiente movimiento:  ");
             move= sc.next().charAt(0); //Leemos el char que ingrese el usuario
-            System.out.print("\033[H\033[2J");  
+
+            System.out.print("\033[H\033[2J");  //Con estas dos lineas limpiamos la pantalla
             System.out.flush();  
 
             System.out.println("\n\n\nW = ARRIBA  "); //Dando indicaciones de que hara cada letra
@@ -60,10 +61,18 @@ public class Movimiento_tablero {
             System.out.println("X = SALIR ");
     
            switch(move){    //Detectamos que hacer en caso de que el usuario toque que letra
-            case 'w' : ob.moveUp(); break; //Restamos una unidad en y
-            case 's' : ob.moveDown(); break; //Sumamos una unidad en y
-            case 'a' : ob.moveLeft(); break;//Restamos una unidad en x
-            case 'd' : ob.moveRight(); break;//Sumamos una unidad en x
+            case 'w' :  ob.moveUp(); //Restamos una unidad en y
+                        System.out.println("Usted se ha movido hacia ARRIBA");
+                        break; 
+            case 's' :  ob.moveDown();//Sumamos una unidad en y
+                        System.out.println("Usted se ha movido hacia ABAJO");
+                        break; 
+            case 'a' :  ob.moveLeft();//Restamos una unidad en x
+                        System.out.println("Usted se ha movido hacia la IZQUIERDA");
+                        break;
+            case 'd' :  ob.moveRight();//Sumamos una unidad en x
+                        System.out.println("Usted se ha movido hacia la IZQUIERDA");
+                        break;
             case 'x' : System.out.println("Usted ha salido con exito, gracias por jugar :)");
                                              System.exit(0); break;
             default : System.out.println("\nE R R O R");
@@ -71,7 +80,6 @@ public class Movimiento_tablero {
 
 
             //MOSTRAR TABLERO
-        
         //Mostramos el tablero con la posicion graficamente
         for(int i=0;i<9;i++){
             for(int y=0;y<9;y++){
@@ -84,17 +92,8 @@ public class Movimiento_tablero {
             }
             System.out.println();
         }
+           System.out.println("\nTu posicion actual es: "+ob.x+","+ob.y); //Mostramos las coordenadas actuales que son atributos del objeto
 
-           System.out.println("\nTu posicion actual es: "+ob.x+","+ob.y); //Mostramos las coordenadas actuales
-
-           
-    
         }while(move != 'x'); //Repetimos este proceso hasta que el usuario quiera salir 
-       
-
-        
-
-        
-       
     }
 }
