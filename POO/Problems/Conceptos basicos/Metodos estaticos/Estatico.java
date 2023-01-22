@@ -18,6 +18,7 @@ public class Estatico {
     Estatico ob1 = new Estatico();
     Estatico ob2 = new Estatico();
 
+    System.out.println("La suma es: "+Estatico.sumarNumeros(3, 4));
 
     System.out.println(Estatico.frase);
 
