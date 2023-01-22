@@ -16,5 +16,7 @@ public class c1 {
         this.nombre=nombre;
     }
    
-
+    public String getNombre(){
+        return nombre;
+    }
 }
