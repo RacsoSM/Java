@@ -40,6 +40,10 @@ public class Vehiculo {
 
         //Creamos los objetos para los coches en un array de la clase Vehiculo
         Vehiculo coches[] = new Vehiculo [numeroVehiculos];
+
+        for(int i=0;i<coches.length;i++){
+            System.out.println("\nDigite las caracteristicas del coche "+(i+1));
+        }
     }
     
 }
