@@ -15,5 +15,15 @@ public class Vehiculo {
         this.modelo = modelo;
         this.precio = precio;
     }
+
+    //Metodo para obtener precio
+    public float getPrecio(){
+        return precio;
+    }
+
+    //Metodo para mostrar el resultado
+    public String mostrarDatos(){
+        return "Marca: "+marca+"\nModelo: "+modelo+ "\nPrecio: $"+precio;
+    }
     
 }
