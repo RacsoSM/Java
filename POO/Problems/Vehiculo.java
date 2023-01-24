@@ -3,5 +3,8 @@
  * de cada vehiculo y crear una clase que represente a cada uno de ellos
  */
 public class Vehiculo {
+    private String marca;
+    private String modelo;
+    private float precio;
     
 }
