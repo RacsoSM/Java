@@ -11,7 +11,7 @@ public class Movimiento_tablero {
 
     //METODOS
     public int moveUp (){
-        if(y>0 && y<9)     y--;
+        if(y>0 && y<9)     y--; //Si el numero está dentro de los limites del tablero, hacemos el movimiento que en este caso es subir, en caso contrario, regresamos al usuario al tablero
         else               y=8;
         return y;
     }
@@ -41,6 +41,7 @@ public class Movimiento_tablero {
         int tablero [][] = new int [9][9];
         Scanner sc = new Scanner(System.in);
         char move=0;
+        System.out.println("\n\n\nW = ARRIBA  "); //Dando indicaciones de que hara cada letra
         System.out.println("S = ABAJO  ");
         System.out.println("A = IZQUIERDA  ");
         System.out.println("D = DERECHA ");
