@@ -46,9 +46,10 @@ public class Vehiculo {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
-        String marca,modelo;
+        String marca;
+        String modelo;
         float precio;
-        int numeroVehiculos;
+        int numeroVehiculos,indiceCoche;
 
         System.out.println("Digite la cantidad de vehiculos: ");
         numeroVehiculos=entrada.nextInt();
@@ -58,8 +59,9 @@ public class Vehiculo {
         Vehiculo coches[] = new Vehiculo [numeroVehiculos];
 
         for(int i=0;i<coches.length;i++){
+            entrada.nextLine(); //Solucion a error de pegado
             System.out.println("\nDigite las caracteristicas del coche "+(i+1));
-            System.out.println("Introduzca marca: ");
+            System.out.println("Introduzca la marca: ");
             marca=entrada.nextLine();
 
             System.out.println("Introduzca el modelo: ");
@@ -71,6 +73,10 @@ public class Vehiculo {
             coches[i] = new Vehiculo(marca, modelo, precio);
         }
 
+       indiceCoche=Vehiculo.indiceBarato(coches);
+
+        System.out.println("\nEl coche mas barato es: ");
+        System.out.println(coches[indiceCoche].mostrarDatos()); //Llamamos al metodo mostrarDatos en la posición del indice mas barato del array de coches.
 
     }
     
