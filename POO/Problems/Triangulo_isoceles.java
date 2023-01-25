@@ -3,6 +3,8 @@
  * triangulo ademas implementar un metodo que a partir de un arreglo de triangulos devuelva el area del triangulo de mayor 
  * superficie.
  */
+import java.util.Scanner;
+import java.lang.Math;
 
 public class Triangulo_isoceles {
   //Atributos
