@@ -27,7 +27,7 @@ public class Atletismo {
 
     //Metodo para mostrar los datos del ganador
    public String mostrarDatos(){
-    return "Nombre del atleta: "+nombreAtleta+"\nNúmero del atleta: "+numeroAtleta+"\nTiempo del atleta: "+tiempoAtleta;
+    return "Nombre del atleta: "+nombreAtleta+"\nNúmero del atleta: "+numeroAtleta+"\nTiempo del atleta: "+tiempoAtleta+" segundos";
    }
 
    //Metodo para determinar al ganador de la carrera
