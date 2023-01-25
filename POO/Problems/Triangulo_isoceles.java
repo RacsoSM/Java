@@ -44,6 +44,22 @@ public class Triangulo_isoceles {
 
 
 
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        double base=0,lado=0,perimetro=0,area=0;
+        int numeroTriangulos;
+
+        System.out.println("Ingrese la cantidad de triangulos: "); //Pedimos la cantidad de triangulos
+        numeroTriangulos = sc.nextInt();
+
+        Triangulo_isoceles triangulos[] = new Triangulo_isoceles [numeroTriangulos];    //creamos un array de la clase triangulos del tamaño que nos dijo el usuario
+        double areas [] = new double [numeroTriangulos];                                //creamos otro array de puras areas
+    }
+
+
+
+
      
    
 }
