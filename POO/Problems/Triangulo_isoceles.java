@@ -55,6 +55,33 @@ public class Triangulo_isoceles {
 
         Triangulo_isoceles triangulos[] = new Triangulo_isoceles [numeroTriangulos];    //creamos un array de la clase triangulos del tamaño que nos dijo el usuario
         double areas [] = new double [numeroTriangulos];                                //creamos otro array de puras areas
+
+
+
+        
+        for(int i=0;i<triangulos.length;i++){
+            System.out.println("\nIngrese las caracteristicas del triangulo "+(i+1)); //Pedimos las caracteristicas del objeto al usuario
+            System.out.print("\nBase del triangulo: ");
+            base = sc.nextDouble();
+
+            System.out.print("Lado del triangulo: ");
+            lado = sc.nextDouble();
+
+            triangulos[i] = new Triangulo_isoceles(base, lado); //Guardamos los datos en el objeto segun su posicion en el array
+
+           
+           perimetro = triangulos[i].calcularPerimetro();   
+           area = triangulos[i].calcularArea();
+
+           areas[i]=area;   //guardamos las areas de todos los triangulos en otro array
+
+           System.out.println("\nEl perimetro es: "+perimetro);
+           System.out.println("El area es: "+area);
+
+          
+            
+        }
+
     }
 
 
