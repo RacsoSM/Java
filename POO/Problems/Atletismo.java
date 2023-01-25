@@ -3,16 +3,31 @@
  * datos del atleta ganador de la carrera
 */
 public class Atletismo {
-    //Atributos de la clase
+    //ATRIBUTOS
     private int numeroAtleta;
     private String nombreAtleta;
     private float tiempoAtleta;
 
+
+
+    //METODOS 
     //Constructor con datos
     public Atletismo (int numeroAtleta, String nombreAtleta, float tiempoAtleta){
         this.numeroAtleta = numeroAtleta;
         this.nombreAtleta = nombreAtleta;
         this.tiempoAtleta = tiempoAtleta;
     }
+
+    //Metodo para obtener el tiempo del atleta
+    public float getTiempo(){
+        return tiempoAtleta;
+    }
+
+    //Metodo para mostrar los datos del ganador
+   public String mostrarDatos(){
+    return "Nombre del atleta: "+nombreAtleta+"\nNúmero del atleta: "+numeroAtleta+"\nTiempo del atleta: "+tiempoAtleta;
+   }
+
+      
 
 }
