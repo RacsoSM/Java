@@ -44,7 +44,7 @@ public class Atletismo {
         }
     }
 
-    return indice;
+    return indice;  //devolvemos el indice del atleta con menor tiempo
    }
 
 
@@ -60,6 +60,7 @@ public class Atletismo {
     int numeroAtleta,cantidadAtletas;
     String nombreAtleta;
     float tiempoAtleta;
+    int indice=0;
 
     System.out.println("Ingrese la cantidad de atletas: ");
     cantidadAtletas = sc.nextInt();
@@ -69,19 +70,24 @@ public class Atletismo {
 
     for(int i=0;i<atletas.length;i++){
         
-        System.out.println("\n\nIngrese las caracteristicas del atleta "+(i+1));
-        System.out.println("Ingrese el numero del atleta ");
+        System.out.println("\nIngrese las caracteristicas del atleta "+(i+1));
+        System.out.print("\nIngrese el numero del atleta: ");
         numeroAtleta = sc.nextInt();
+        
         sc.nextLine();
-
-        System.out.println("Ingrese el nombre del atleta ");
+        System.out.print("Ingrese el nombre del atleta: ");
         nombreAtleta = sc.nextLine();
 
-        System.out.println("Ingrese el tiempo del atleta en segundos");
+        System.out.print("Ingrese el tiempo del atleta en segundos: ");
         tiempoAtleta = sc.nextFloat();
+
+        atletas[i]= new Atletismo(numeroAtleta, nombreAtleta, tiempoAtleta); //Guardamos los valores que acabamos de pedir al usuario en el array de atletas
     }
 
+    indice= indiceMenorTiempo(atletas); //Llamamos al metodo indiceMenorTiempo y guardamos su return en la variable indice
 
+    System.out.println("\nLos datos del atleta ganador son:");
+    System.out.println(atletas[indice].mostrarDatos()); //Mostramos el valor de atletas en la posicion indice con el metodo mostrarDatos
 
    }
 }
