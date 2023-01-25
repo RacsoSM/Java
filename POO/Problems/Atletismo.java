@@ -8,5 +8,11 @@ public class Atletismo {
     private String nombreAtleta;
     private float tiempoAtleta;
 
+    //Constructor con datos
+    public Atletismo (int numeroAtleta, String nombreAtleta, float tiempoAtleta){
+        this.numeroAtleta = numeroAtleta;
+        this.nombreAtleta = nombreAtleta;
+        this.tiempoAtleta = tiempoAtleta;
+    }
 
 }
