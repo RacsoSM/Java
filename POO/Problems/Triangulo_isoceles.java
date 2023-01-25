@@ -15,6 +15,19 @@ public class Triangulo_isoceles {
         this.lado = lado;
     }
 
+    public double calcularPerimetro(){
+        double perimetro=0;
+        perimetro = base + (2*lado);
+        return perimetro;
+    }
+
+    public double calcularArea(){
+       double area = 0;              //Calcular area del triangulo, formula b* raiz de a cuadrada-b cuadrada / 4 y todo /2
+       area=(base*Math.sqrt((lado*lado)-((base*base)/4)))/2;
+        return area;
+    }
+
+
      
    
 }
