@@ -29,6 +29,20 @@ public class Triangulo_isoceles {
         return area;
     }
 
+    public static int maxArea (double [] areas){ //Metodo para sacar el area maxima de los triangulos
+        int index = 0;
+        double max = 0;
+
+        for(int i=0;i<areas.length;i++){
+            if(areas[i]>max){       //comparamos el area del triangulo con el maximo hasta el momento
+                max=areas[i];
+                index=i;    //guardamos el index
+            }
+        }
+        return index;       //retornamos el index
+    }
+
+
 
      
    
