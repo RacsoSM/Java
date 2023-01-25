@@ -9,6 +9,11 @@ public class Triangulo_isoceles {
   private double base;
   private double lado;
 
+    //Metodo constructor
+    public Triangulo_isoceles(double base, double lado){
+        this.base = base;
+        this.lado = lado;
+    }
 
      
    
