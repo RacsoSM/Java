@@ -5,7 +5,11 @@
  */
 
 public class Triangulo_isoceles {
-  
+  //Atributos
+  private double base;
+  private double lado;
+
+
      
    
 }
