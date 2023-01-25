@@ -82,6 +82,11 @@ public class Triangulo_isoceles {
             
         }
 
+        
+        System.out.println("\n\nEl area maxima es: "+areas[Triangulo_isoceles.maxArea(areas)]); //Llamamos al array de areas en la posicion del indice del mayor area.
+        
+
+
     }
 
 
