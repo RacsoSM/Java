@@ -3,5 +3,10 @@
  * datos del atleta ganador de la carrera
 */
 public class Atletismo {
-    
+    //Atributos de la clase
+    private int numeroAtleta;
+    private String nombreAtleta;
+    private float tiempoAtleta;
+
+
 }
