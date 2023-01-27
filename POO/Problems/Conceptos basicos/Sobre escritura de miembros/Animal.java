@@ -1,6 +1,6 @@
 public class Animal {
    
-    public void comer (){
+    public void comer(){
         System.out.println("Estoy comiendo");
     }
 
