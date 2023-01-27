@@ -4,6 +4,11 @@ public class Persona {
     private String apellido;
     private int edad;
 
+    /*protected String nombre;
+    protected String apellido;
+    protected int edad;*/
+    //protected es un modificador de acceso que sirve para que los atributos puedan ser accedidos tanto por la clase como por los hijos de esta
+
     //Metodos
     //Constructor
     Persona(String nombre, String apellido, int edad){

@@ -2,12 +2,12 @@ public class Estudiante extends Persona{//Con extends y el nombre de la clase le
     
     //Agregamos los atributos unicos de estudiante que persona NO tiene
    private int codigoEstudiante;
-   private float notaFinal;
+   private double notaFinal;
 
 
    //Constructor de una clase hija, ponemos de parametros los atributos que heredó y tambien los propios
    //Los heredados no los debemos inicializar de nuevo, por lo cual ponemos super y dichos atributos
-    public Estudiante(String nombre, String apellido, int edad, int codigoEstudiante,float notaFinal){
+    public Estudiante(String nombre, String apellido, int edad, int codigoEstudiante,double notaFinal){
         super(nombre, apellido, edad); //Con esta linea le decimos a java que nombre, apellido y edad ya estan inicializados dentro de Persona
         this.codigoEstudiante = codigoEstudiante;
         this.notaFinal = notaFinal;

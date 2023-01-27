@@ -1,5 +1,13 @@
 public class Main {
-   
+   public static void main(String[] args) {
+    Estudiante estudiante = new Estudiante("Oscarino", "Santander",18, 22170820, 91.80); //Creamos el objeto y lo llenamos de sus datos
+
+    estudiante.mostrarDatos();//Mostramos todos los datos del estudiante.
+   }
+    
+
+    
+
 }
 /*La herencia es como su nombre lo indica, heredar atributos y metodos de una clase ya hecha en una nueva, esto
  * para ahorrarnos codigo
