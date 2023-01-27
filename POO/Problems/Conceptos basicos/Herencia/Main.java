@@ -5,4 +5,6 @@ public class Main {
  * para ahorrarnos codigo
  * 
  * extends es la palabra con la que le indicamos a java que una clase es hija de otra
+ * 
+ * super es la palabra con la que le indicamos al constructor de la clase hija que atributos esta heredando de la clase padre
  */
