@@ -19,7 +19,7 @@ public class Estudiante extends Persona{//Con extends y el nombre de la clase le
         System.out.println("Nombre: "+getNombre()+  //se usan los getters por que los atributos estan encapsulados
             "\nApellido: "+getApellido()+
             "\nEdad: "+getEdad()+
-            "\nCodigo de estudainte: "+codigoEstudiante+    //estos atributos ya no estan encapsulados
+            "\nCodigo de estudiante: "+codigoEstudiante+    //estos atributos ya no estan encapsulados
             "\nNota final: "+notaFinal);
     }
     
