@@ -1,6 +1,6 @@
 package ClasesAbstractas;
 
-public class Animal {
+public abstract class Animal extends SerVivo{
 
    
     
