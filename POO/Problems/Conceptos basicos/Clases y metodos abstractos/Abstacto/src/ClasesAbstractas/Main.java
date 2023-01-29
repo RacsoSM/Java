@@ -10,7 +10,10 @@ public class Main {
         Planta p1 = new Planta();
         AnimalCarnivoro ac1 = new AnimalCarnivoro();
         AnimalHerbivoro ah1 = new AnimalHerbivoro();
-        
+
+        p1.alimentarse();
+        ac1.alimentarse();
+        ah1.alimentarse();
     }
     
 }
