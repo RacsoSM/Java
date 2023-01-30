@@ -11,6 +11,8 @@ public class basico {
      * put = ingresa un valor al hashmap
      * get = muestra un valor al nosotros ingresarle la key
      * containsKey = muestra si el hashmap contiene cierta llave, regresa un boolean
+     * containsKey = muestra si el hashmap contiene cierto valor, regresa un boolean
+     * putIfAbsent = Si la key no esta en el hashmap, lo añade, si si esta lo ignora
      */
     public static void main(String[] args) {
         HashMap<String,Integer> empIds = new HashMap <> (); //HashMap de key String y value Integer de nombre empIds
@@ -28,6 +30,11 @@ public class basico {
 
         System.out.println("\n"+empIds.containsValue(24123)); //Nos muestra si el hashmap tiene un valor especifico, devolviendonos un boolean, aqui devuelve true
         System.out.println(empIds.containsValue(243)); //devuelve false ya que el valor 243 no existe
+
+        empIds.putIfAbsent("Fernandinho", 111); //Si la key no esta en el hashmap, lo añade, si si esta lo ignora
+
+
+        System.out.println(empIds); //Mostramos el contenido del HashMap
     }
     
 }
