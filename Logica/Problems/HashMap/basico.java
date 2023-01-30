@@ -21,12 +21,13 @@ public class basico {
 
         System.out.println(empIds); //Mostramos el contenido del HashMap
 
-        System.out.println(empIds.get("Jerry")); // Valor de Jerry
+        System.out.println("\n"+empIds.get("Jerry")); // Valor de Jerry
 
         System.out.println(empIds.containsKey("Jerry"));//Nos muestra si el hashmap tiene una key especifica, devolviendonos un boolean, aqui devuelve true
         System.out.println(empIds.containsKey("Fernandinho")); //devuelve false ya que la key Fernandinho no existe
 
-      
+        System.out.println("\n"+empIds.containsValue(24123)); //Nos muestra si el hashmap tiene un valor especifico, devolviendonos un boolean, aqui devuelve true
+        System.out.println(empIds.containsValue(243)); //devuelve false ya que el valor 243 no existe
     }
     
 }
