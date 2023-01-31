@@ -13,6 +13,7 @@ public class basico {
      * containsKey = muestra si el hashmap contiene cierta llave, regresa un boolean
      * containsKey = muestra si el hashmap contiene cierto valor, regresa un boolean
      * putIfAbsent = Si la key no esta en el hashmap, lo añade, si si esta lo ignora
+     * remove = remueve un elemento con la key
      */
     public static void main(String[] args) {
         HashMap<String,Integer> empIds = new HashMap <> (); //HashMap de key String y value Integer de nombre empIds
@@ -33,8 +34,15 @@ public class basico {
 
         empIds.putIfAbsent("Fernandinho", 111); //Si la key no esta en el hashmap, lo añade, si si esta lo ignora
 
-
         System.out.println(empIds); //Mostramos el contenido del HashMap
+
+        empIds.remove("Carl"); //Borramos a carl del hashmap
+
+        System.out.println("\n"+empIds); //Mostramos el contenido del HashMap
+
+        for(String index : empIds.keySet()){ //Muestra los valores que contiene el hashmap
+            System.out.println(empIds.get(index));
+        }
     }
     
 }
