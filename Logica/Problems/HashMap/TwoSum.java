@@ -29,7 +29,6 @@ public class TwoSum {
         Only one valid answer exists.
         hola, el dia de hoy solo quiero llegar a los commits, perdon:(
             
-            
         */
     public static void main(String[] args) {
         int nums [] = {2,7,11,15};
