@@ -24,6 +24,7 @@ public class probClementeFrecuencias {
 	
 		
 		//Determinamos cuantas copias hay en el array para asi crear uno de no repetidos con los espacios justos
+//METODO DETERMINAR CUANTAS COPIAS HAY ======================================================================================================================================================================
 		for (int i = 0; i < arrNombres.length; i++) {
 			
 				for (int j = i; j < arrNombres.length; j++) {//se hizo asi el iterador por que queremos que cada vez, se compare solo contra los nombres que no se ha comparado
@@ -44,12 +45,13 @@ public class probClementeFrecuencias {
 		
 		String[] arrNoRepetidos = new String [nombresSinRepetir]; //creamos el array de nombres no repetidos con el calculo que obtuvimos
 				//Creamos el array sin copias o repetidos
+//CREAR ARRAY SIN COPIAS =====================================================================================================================================================================
 				for (int i = 0; i < arrNombres.length; i++) {
 					for (int j = 0; j < arrNoRepetidos.length; j++) {
 						
 						if(arrNoRepetidos[j]==null){ //si la posicion actual del array sin copias es nula, le damos el nombre actual
 							arrNoRepetidos[x]=arrNombres[i];
-							x++;//añadimos 1 a la posicion del array sin copias
+							x++;//aï¿½adimos 1 a la posicion del array sin copias
 							break;//rompemos el for
 						}
 						
@@ -62,15 +64,15 @@ public class probClementeFrecuencias {
 				
 				//ponemos las frecuencias a su respectivo array
 		int[] arrFrecuencias = new int [nombresSinRepetir];
-		
+//METODO PARA AGG FRECUENCIAS A CADA NOMBRE =============================================================================================================================================
 				for (int i = 0; i < arrNoRepetidos.length; i++) {//el bucle grande se repetira el numero de veces de los nombres no repetidos
 					//if(arrNoRepetidos[i]==null) contadorDuplicados++;
 					
-					for (int j = 0; j < arrNombres.length; j++) {//el bucle pequeño se repetira el numero de nombres totales
+					for (int j = 0; j < arrNombres.length; j++) {//el bucle pequeï¿½o se repetira el numero de nombres totales
 						
 						if(arrNombres[j].equalsIgnoreCase(arrNoRepetidos[i])){//si el nombre actual es igual al nombre no repetido, se
 														//le suma uno mas al array de frecuencias, en la posicion i, por que i solo tiene los 
-														//nombres NO repetidos, este for dará las vueltas necesarias para hacerlo
+														//nombres NO repetidos, este for darï¿½ las vueltas necesarias para hacerlo
 							arrFrecuencias[i]++;
 						}
 					}
@@ -94,7 +96,7 @@ public class probClementeFrecuencias {
 		 int auxFrecuencias[]= new int [arrNoRepetidos.length];
 		String auxNombres[]= new String [arrNoRepetidos.length];
 		
-
+//METODO PARA ACOMODAR FRECUENCIAS POR CANTIDAD DE FRECUENCIA =================================================================================================================================
 		for(int i=0;i<arrFrecuencias.length;i++){
 			
 			for(int y=0;y<arrFrecuencias.length-1;y++){
