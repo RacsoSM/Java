@@ -47,7 +47,7 @@ public class Contacto {
 		sexo = (persona.getSexo()=='H')? "Hombre": "Mujer"; //Cambiamos el mensaje para cada sexo
 		
 		return persona.getAlias()+"\n"+persona.getNombre()+" "+persona.getApellido()+"  "+sexo+
-				"\n"+tipoTel+": "+telefono.getClavePais()+" " +telefono.getNumeroTelefonico()+"\n\n";
+				"\n"+tipoTel+": "+telefono.getClavePais()+" " +telefono.getNumeroTelefonico()+"\n";
 	}
 	
 	
