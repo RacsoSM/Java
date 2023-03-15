@@ -1,18 +1,33 @@
 package Directorio;
 
+import java.util.ArrayList;
 
 public class Contacto {
 	//atributos
 	private Persona persona;
 	private Telefono telefono;
+	//checar
+	//private ArrayList<Telefono> listaTelefono;
 	private static int cantidadContactos; //atributo para contar la cantidad de contactos 
 	
 	//constructor
 	public Contacto (Persona persona, Telefono telefono){
 		this.persona=persona;
 		this.telefono=telefono;
-		cantidadContactos+=1; //cada vez que se cree un contacto sumamos uno 
 	}
+	
+	/*public Contacto (Persona persona){
+		//checar
+		listaTelefono = new ArrayList<Telefono>();
+		this.persona=persona;
+		
+		cantidadContactos+=1; //cada vez que se cree un contacto sumamos uno 
+	}*/
+	
+	//checar
+	/*public void agregarTelefono(){
+		listaTelefono.add(telefono);
+	}*/
 	
 	//getter de cantidad de contactos
 	public static int getCantidadContactos(){
@@ -40,7 +55,7 @@ public class Contacto {
 		String tipoTel="",sexo;
 		
 			switch(telefono.getTipoTelefono()){ //Cambiamos el mensaje para cada tipo de telefono
-				case 'M': tipoTel = "Móvil";    break;
+				case 'M': tipoTel = "Movil";    break;
 				case 'O': tipoTel = "Oficina";  break;
 				case 'C': tipoTel = "Casa";		break;
 			}
