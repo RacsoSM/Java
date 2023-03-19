@@ -33,4 +33,8 @@ public class Telefono {
 	}
 	
 	
+	public String toString (){
+		return tipoTelefono+ " "+clavePais+" "+numeroTelefonico;
+	}
+	
 }

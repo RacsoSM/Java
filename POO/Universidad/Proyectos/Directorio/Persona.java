@@ -45,6 +45,9 @@ public class Persona {
 		this.alias = alias;
 	}
 	
+	public String toString(){
+		return nombre+" "+apellido+ "'"+alias+"'" +"\t"+sexo;
+	}
 	
 	
 }

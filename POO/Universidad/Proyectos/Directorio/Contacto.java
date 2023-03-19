@@ -1,37 +1,17 @@
 package Directorio;
 
-import java.util.ArrayList;
-
-public class Contacto {
+//agregamos la interfaz
+public class Contacto { //el tipo de objeto a comparar es "Contacto"
 	//atributos
 	private Persona persona;
 	private Telefono telefono;
-	//checar
-	//private ArrayList<Telefono> listaTelefono;
-	private static int cantidadContactos; //atributo para contar la cantidad de contactos 
+	
+	
 	
 	//constructor
 	public Contacto (Persona persona, Telefono telefono){
 		this.persona=persona;
 		this.telefono=telefono;
-	}
-	
-	/*public Contacto (Persona persona){
-		//checar
-		listaTelefono = new ArrayList<Telefono>();
-		this.persona=persona;
-		
-		cantidadContactos+=1; //cada vez que se cree un contacto sumamos uno 
-	}*/
-	
-	//checar
-	/*public void agregarTelefono(){
-		listaTelefono.add(telefono);
-	}*/
-	
-	//getter de cantidad de contactos
-	public static int getCantidadContactos(){
-		return cantidadContactos;
 	}
 	
 	//getter y setter de persona
@@ -61,9 +41,11 @@ public class Contacto {
 			}
 		sexo = (persona.getSexo()=='H')? "Hombre": "Mujer"; //Cambiamos el mensaje para cada sexo
 		
-		return persona.getAlias()+"\n"+persona.getNombre()+" "+persona.getApellido()+"  "+sexo+
+		return persona.getNombre()+" "+persona.getApellido()+" '"+persona.getAlias()+"' "+sexo+
 				"\n"+tipoTel+": "+telefono.getClavePais()+" " +telefono.getNumeroTelefonico()+"\n";
 	}
+
+	
 	
 	
 }
