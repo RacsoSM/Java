@@ -60,6 +60,6 @@ public class Contacto {
 	
 	//toString que regresa todos los atributos
 	public String toString(){
-		return "Nombre: "+nombre+"\nSexo: "+sexo+"\nAlias: "+alias+"\nTelefono: "+telefono+"\nTipo de telefono: "+tipoTelefono;
+		return nombre+"\t"+sexo+"\t"+alias+"\t"+telefono+"\t"+tipoTelefono;
 	}
 }

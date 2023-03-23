@@ -1,6 +1,6 @@
 package segundaUnidad;
 public class EnteroX {
-    int x; //declaramos atributos
+    static int x; //declaramos atributos
 
     public  int getX(){//getter y setter de x
         return x;
@@ -19,4 +19,8 @@ public class EnteroX {
         System.out.println("unaX.getX = "+unaX.getX()); //los mostramos
         System.out.println("otraX.getX = "+otraX.getX());
     }
+    //Ahora que cambiamos la 'x' a estatica, el resultado cambia ya que solo existe una
+    //'x', esta se comparte entre los dos objetos, por lo que se mostrará en pantalla
+    //el ultimo cambio que fue realizado a esta, en este caso 50.
+
 }

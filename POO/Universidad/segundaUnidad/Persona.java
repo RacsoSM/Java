@@ -6,6 +6,7 @@ public class Persona {
 		private double peso;
 		private double altura;
 		
+		
 		public Persona (String nombre, double peso, double altura){
 			this.nombre = nombre; //constructor de persona
 			this.peso = peso;
@@ -17,6 +18,7 @@ public class Persona {
 			double imc = peso/ (altura*altura);
 			return imc;
 		}
+
 		
 		//getter y setter de nombre
 		public String getNombre() {

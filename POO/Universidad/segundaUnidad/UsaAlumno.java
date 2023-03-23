@@ -34,6 +34,7 @@ public class UsaAlumno {
 		byte grado;
 		char grupo;
 		
+		//SEPARAR POR METODOS PARA QUE CADA PARTE TENGA UNA RESPONSABILIDAD UNICA
 		for(int i=0;i<arregloAlumnos.length;i++){		//PEDIMOS LOS DATOS DEL ALUMNO
 			System.out.println("Datos del alumno numero "+(i+1));
 			System.out.println("Ingrese el nombre del alumno: ");

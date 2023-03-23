@@ -1,8 +1,8 @@
 package segundaUnidad;
 
 public class Punto {
-	private int x=0;
-	private int y=0;
+	 int x=0;
+	 int y=0;
 	private static int totalPuntos=0; //cambiamos a private el atributo estatico 
 	
 	public Punto(int _x, int _y) { //constructor con los atributos 'x' y 'y'
@@ -18,6 +18,14 @@ public class Punto {
 	public void sety (int _y){
 		y=_y;
 	}
+	
+	public int getX (){
+		return x;
+	}
+	
+	public int getY (){
+		return y;
+	}
 	public static int getTotalPuntos(){ //getter de totalPuntos, es estatico por que el atributo
 		return totalPuntos;				//tambien lo es
 	}
@@ -26,6 +34,9 @@ public class Punto {
 		return "("+x+","+y+")"; //retornamos los valores de x y y entre parentesis
 	}
 	
-	
+	public void setPunto (int newX, int newY){
+		x=newX;
+		y=newY;
+	}
 
 }
