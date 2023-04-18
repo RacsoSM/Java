@@ -1,4 +1,4 @@
-package Directorio;
+package AgendaTel;
 
 
 public class Telefono {

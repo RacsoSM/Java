@@ -1,7 +1,7 @@
-package Directorio;
+package AgendaTel;
 
-import java.util.Comparator;
-//creamos una clase para comparar 
+import java.util.Comparator;//importamos el comparador
+
 public class ComparadorContactos implements Comparator<Contacto>{ //el tipo de objeto a comparar es "Contacto"
 	
 	@Override //este es un metodo abstracto que se necesita llamar para realizar la comparación
