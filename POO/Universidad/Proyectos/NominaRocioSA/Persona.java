@@ -23,6 +23,6 @@ public class Persona {
 	}
 	
 	public String toString(){
-		return nombreApellido+" "+sexo+" "+" "+fechaNacimiento;
+		return "\t"+nombreApellido+" \t"+sexo;
 	}
 }
