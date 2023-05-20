@@ -1,4 +1,8 @@
-package NominaRocioSA;
+package nominav2;
+/*Santacruz Maldonado Oscar Said				EASA
+ * Marrujo Garcia Angel							POO 10:00-11:00
+ * Dra Lucia Barron  
+ * Clase persona para definir la estructura de los empleados*/
 
 public class Persona {
 	private String nombreApellido; 	//declaramos atributos de persona
@@ -23,6 +27,6 @@ public class Persona {
 	}
 	
 	public String toString(){
-		return "\t"+nombreApellido+" \t"+sexo;
+		return nombreApellido+" "+sexo+" "+" "+fechaNacimiento;
 	}
 }
